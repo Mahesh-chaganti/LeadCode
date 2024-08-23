@@ -1,26 +1,22 @@
-package com.example.leadcode
+package com.example.leadcode.utils.composables
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.leadcode.R
 
 @Composable
 fun CustomRadioButton(
@@ -95,18 +91,22 @@ fun CustomRadioButton(
 
 @Composable
 fun RadioButtonGroup(
-    options: List<String>,
+    options: List<String?>,
     selectedOption: String,
     onOptionSelected: (String) -> Unit
 ) {
     Column {
         options.forEach { option ->
 
+            if (option != null) {
                 CustomRadioButton(
                     isSelected = selectedOption == option,
-                    onClick = { onOptionSelected(option) },
+                    onClick = {
+                        onOptionSelected(option)
+                    },
                     data = option
                 )
+            }
 
 
         }

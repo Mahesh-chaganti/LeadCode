@@ -81,23 +81,45 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
 
-    //aws-api-gateway-sdk files
+   //okhttp
+    implementation("com.squareup.okhttp3:okhttp:3.2.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
-    implementation(files("libs/aws-apigateway-api-sdk-1.0.0.jar"))
-    implementation(files("libs/aws-android-sdk-apigateway-core-2.16.13.jar"))
-    implementation(files("libs/aws-android-sdk-core-2.16.13.jar"))
+
+
 //    implementation(files("libs/gson-2.2.4.jar"))
 
     //lifecycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.3")
-
-    // ... other dependencies
-
-
-
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 
 
     // ... other dependencies
+
+    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+
+    //navigation
+    implementation("androidx.navigation:navigation-compose:2.4.0-alpha04")
+
+    //MoshiConverter
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
+    // ... other dependencies
+
+    //coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
+    //palette API
+    implementation("androidx.palette:palette-ktx:1.0.0")
+
+
+    //bottomnav
+    implementation("androidx.compose.material:material:1.6.8")
+
+    //datastore
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation(kotlin("script-runtime"))
+
 
 }
 kapt {

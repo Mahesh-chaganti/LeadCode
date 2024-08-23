@@ -1,7 +1,6 @@
-package com.example.leadcode
+package com.example.leadcode.utils.composables
 
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect

@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">LeadCode</string>
+    <string name="Home">Quiz</string>
+    <string name="Articles">Articles</string>
+    <string name="Tutorials">Tutorials</string>
+    <string name="Search">Search</string>
+    <string name="InterviewPrep">InterviewPrep</string>
+
+
+
 
     <!-- <string name="app_name">My Awesome App</string> -->
 </resources>
